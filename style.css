@@ -1,0 +1,191 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgb(217, 217, 217);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box1{
+    width: 336px;
+    height: 435px;
+    background-color: white;
+    border-radius: 12px;
+    margin: 0 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.signup h1{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Roboto";
+    padding: 20px 0px 0px;
+
+}
+
+.login h1{
+    font-size: 36px;
+    font-weight: bold;
+    font-family: "Roboto";
+    padding: 20px 0px 0px;
+    display: flex;
+}
+
+.horizontal-line {
+    width: 52px;
+    height: 5px;
+    background-color: black;
+    position: relative;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.giris{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position:relative;
+}
+
+.kapsayici{
+    display:flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.kapsayici2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    gap:20px;
+}
+
+.eposta{
+    width: 248px;
+    height: 43px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+    margin-top: 75px;
+}
+
+.email-id{
+    width: 248px;
+    height: 43px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+}
+
+.password{
+    width: 248px;
+    height: 43px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+}
+
+.password-input {
+    width: 248px;
+    height: 43px;
+    border: none;
+    background-color: rgb(217, 217, 217);
+    margin-top: 20px;  /*"Password" kutusunun altına yerleştirin */
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 248px; /* Düğmelerin genişliğini ayarlayın */
+    margin-top: 10px; /* Düğmeleri "Password" kutusundan ayırın */
+    margin-left:17px;
+}
+
+.login-button{
+    width: 84px;
+    height: 27px;
+    background-color: rgba(217, 217, 217, 1); /* Düğme arkaplan rengini ayarlayın */
+    color: black; /* Düğme metin rengini ayarlayın */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.signup-button {
+    width: 84px;
+    height: 27px;
+    background-color: black; /* Düğme arkaplan rengini ayarlayın */
+    color: white; /* Düğme metin rengini ayarlayın */
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input::placeholder{
+    text-align: left;
+    padding-left: 50px;
+}
+
+.giris i{
+    position:absolute;
+    left: 0px;
+    top:78px;
+    padding:10px 15px;
+}
+
+.id{
+    position: relative;
+} 
+
+.id i{
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.sifre{
+    position: relative;
+} 
+
+.sifre i{
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+}
+
+.giris input[type="text"],
+.id input[type="text"],
+.sifre input[type="password"] {
+    
+   
+padding-left: 40px; /* Metin kutusunun solundaki boşluğu artırarak yazının ikonun sağından başlamasını sağlar */
+    
+   
+background-position: right center; /* Arka plandaki ikonun metin kutusunun sağına hizalanmasını sağlar */
+}
+
+.giris input[type="text"]::placeholder,
+.id input[type="text"]::placeholder,
+.sifre input[type="password"]::placeholder {
+    text-align: left; /* Metin kutusunun içindeki yazının sol hizalanmasını sağlar */
+    padding-left: 10px; /* Metin kutusunun içindeki yazının sola yaklaştırılmasını sağlar */
+    background-position: right center; /* Arka plandaki ikonun metin kutusunun sağına hizalanmasını sağlar */
+}
